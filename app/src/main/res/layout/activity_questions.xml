@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/questao"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="462dp"
         android:layout_marginBottom="35dp"
         android:contentDescription="TODO"
         app:layout_constraintBottom_toTopOf="@+id/buscarBanco"
@@ -33,12 +33,11 @@
     <TextView
         android:id="@+id/visualizarBanco"
         android:layout_width="225dp"
-        android:layout_height="85dp"
-        android:layout_marginBottom="4dp"
+        android:layout_height="123dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="@+id/buscarBanco"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

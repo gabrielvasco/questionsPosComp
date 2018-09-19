@@ -24,14 +24,15 @@ public class questions extends AppCompatActivity {
         ImageButton buscarBanco = (ImageButton) findViewById(R.id.buscarBanco);
         final TextView visualizarBanco = (TextView) findViewById(R.id.visualizarBanco);
         ImageView image = (ImageView) findViewById(R.id.questao);
-        Picasso.with(this).load("http://www.guiadaobra.net/imagens/humor/pedreiro-bom-pra-cachorro-1.jpg").into(image);
+        final String linkImage = "http://www.guiadaobra.net/imagens/humor/pedreiro-bom-pra-cachorro-1.jpg";
+        Picasso.with(this).load(linkImage).into(image);
 
         buscarBanco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // do something when the corky is clicked
                 try {
-                    visualizarBanco.setText(bd.getResp());
+                    visualizarBanco.setText(linkImage+"\n"+ bd.getResp());
                 }catch (Exception e)
                 {
                     visualizarBanco.setText(e.getMessage());
