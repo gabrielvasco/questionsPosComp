@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PosComp</string>
+    <string name="title_activity_tela_selecao">telaSelecao</string>
+    <string name="title_activity_questions">questions</string>
 </resources>
