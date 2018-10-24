@@ -2,42 +2,188 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".questions">
 
 
-    <ImageView
-        android:id="@+id/questao"
-        android:layout_width="0dp"
-        android:layout_height="462dp"
-        android:layout_marginBottom="35dp"
-        android:contentDescription="TODO"
-        app:layout_constraintBottom_toTopOf="@+id/buscarBanco"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <ImageButton
-        android:id="@+id/buscarBanco"
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="91dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/questao"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:layout_height="570dp"
+        android:paddingBottom="50dp"
+        android:paddingRight="5dp">
 
-    <TextView
-        android:id="@+id/visualizarBanco"
-        android:layout_width="225dp"
-        android:layout_height="123dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/buscarBanco"
+        <LinearLayout
+            android:id="@+id/linearLayouttop"
+            android:layout_width="382dp"
+            android:layout_height="502dp"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Matemática 1" />
+
+            <TextView
+                android:id="@+id/corpo"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="O limite de √𝑛2+1/n7−2 𝑛 quando 𝑛 → ∞ é:"
+                android:textSize="20dp" />
+
+
+            <ImageView
+                android:id="@+id/imagemCorpo"
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/corpo1"
+                android:layout_width="362dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="O limite de √𝑛2+1/n7−2 𝑛 quando 𝑛 → ∞ é:O limite de √𝑛2+1/n7−2 𝑛 quando 𝑛 → ∞ é:O limite de √𝑛2+1/n7−2 𝑛 quando 𝑛 → ∞ é∞ é:O limite de √𝑛2+1/n7−2 𝑛 quando 𝑛 → ∞ é∞ é:O limite de √𝑛2+1/n7−2 𝑛 quando 𝑛 → ∞ é:"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/opcA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="A) Matemática 1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/opcB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="B) Matemática 1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/opcC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="C) Matemática 1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/opcD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="D) Matemática 1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/opcE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="E) Matemática 1"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.899"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/C"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="D" />
+
+        <Button
+            android:id="@+id/E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="E" />
+
+        <Button
+            android:id="@+id/OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="OK" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

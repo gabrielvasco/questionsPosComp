@@ -13,13 +13,16 @@ import java.net.URL;
 import java.util.Scanner;
 import javax.net.ssl.HttpsURLConnection;
 
-public class bdService {
+public class bdServiceOld {
 
     private String resp;
     final dbCredencials credencials= new dbCredencials();
     public void buscarQuestions() {
 
         final StringBuilder resposta = new StringBuilder();
+
+
+
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
@@ -130,5 +133,3 @@ public class bdService {
         });
     }
 }
-
-
